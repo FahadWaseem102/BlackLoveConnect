@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:src="@drawable/splash"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textSize="30sp"
+            android:textColor="@color/colorMain"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_login"
+            android:layout_width="305dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="305dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:hint="Email"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_login"
+            android:layout_width="305dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="305dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/colorMain"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="40dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Clicked"
+
+            />
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="Login"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/button_bg" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Didn't have a account: SIGN UP"
+        android:textColor="@color/colorMain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="signUp"
+        />
+</RelativeLayout>

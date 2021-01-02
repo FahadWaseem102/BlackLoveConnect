@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearOther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/white_back"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:id="@+id/otherUserMsg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 Sept, 2020 12:00 AM"
+            android:textColor="@color/colorGrey"
+            android:textSize="11sp"
+            android:layout_gravity="end"
+            android:layout_marginTop="2dp"
+            android:id="@+id/otherUserDate"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/green_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:id="@+id/currentUserMsg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 Sept, 2020 12:00 AM"
+            android:textColor="@color/colorSilver"
+            android:textSize="11sp"
+            android:layout_gravity="start"
+            android:layout_marginTop="2dp"
+            android:id="@+id/currentUserDate"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

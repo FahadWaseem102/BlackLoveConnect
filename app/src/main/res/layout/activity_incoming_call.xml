@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".main.IncomingCallActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDarkGrey"
+        android:text="UserName"
+        android:id="@+id/userName"
+        android:textStyle="bold"
+        android:textSize="33sp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio Call"
+        android:id="@+id/callType"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorGrey_mid"/>
+    
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:background="@drawable/decline_button"
+            android:text="Decline"
+            android:id="@+id/btnDecline"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:background="@drawable/accept_button"
+            android:text="Accept"
+            android:id="@+id/btnAccept"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+    
+</LinearLayout>
